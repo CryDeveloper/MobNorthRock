@@ -5,6 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+    <!--content-->
+    <View
+        android:id="@+id/main_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_back"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintTop_toBottomOf="@+id/head"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/twName"
+        android:text="NORTH ROCK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/slogan"
+        android:text="новое слово в жанре"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/circle_group"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head" />
+
+    <Button
+        android:id="@+id/btn_buyTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Купить билеты"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+    <!--end content-->
+
     <!--header-->
     <View
         android:id="@+id/head"
@@ -48,53 +102,47 @@
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/youtube" />
         </LinearLayout>
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="@+id/head"
-        app:layout_constraintEnd_toEndOf="@+id/head"
-        app:layout_constraintStart_toStartOf="@+id/head"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/head" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/imageView"
+        <TextView
+            android:id="@+id/day_one"
+            style="@style/bold9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/logo" />
+            android:layout_marginRight="20dp"
+            android:text="ДЕНЬ 1" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/day_two"
+            style="@style/bold9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10px">
+            android:layout_marginRight="20dp"
+            android:text="ДЕНЬ 2" />
 
-            <TextView
-                android:id="@+id/day_one"
-                style="@style/bold9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
-                android:text="ДЕНЬ 1" />
-
-            <TextView
-                android:id="@+id/day_two"
-                style="@style/bold9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
-                android:text="ДЕНЬ 2" />
-
-            <TextView
-                style="@style/bold9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ДЕНЬ 3" />
-        </LinearLayout>
+        <TextView
+            style="@style/bold9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ДЕНЬ 3" />
     </LinearLayout>
     <ImageView
         android:layout_width="43dp"
@@ -106,9 +154,6 @@
         tools:ignore="MissingConstraints" />
     <!--end header-->
 
-    <!--content-->
-    <!--end content-->
-
     <!--footer-->
     <View
         android:id="@+id/footer"
@@ -118,6 +163,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints" />
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
