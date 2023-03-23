@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!--header-->
+    <View
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:background="@color/dark_purple"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/instagram" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/vk" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/facebook" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/youtube" />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/head"
+        app:layout_constraintEnd_toEndOf="@+id/head"
+        app:layout_constraintStart_toStartOf="@+id/head"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10px">
+
+            <TextView
+                android:id="@+id/day_one"
+                style="@style/bold9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="ДЕНЬ 1" />
+
+            <TextView
+                android:id="@+id/day_two"
+                style="@style/bold9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="ДЕНЬ 2" />
+
+            <TextView
+                style="@style/bold9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ДЕНЬ 3" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginHorizontal="5dp"
+        android:src="@drawable/flag_russia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+    <!--end header-->
+
+    <!--content-->
+    <!--end content-->
+
+    <!--footer-->
+    <View
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@color/dark_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/footer">
+
+        <TextView
+            android:id="@+id/about_us"
+            style="@style/bold9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="О НАС"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/members"
+            style="@style/bold9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="УЧАСТНИКИ"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/about_us"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/main"
+            style="@style/bold9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="ГЛАВНОЕ"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/members"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/square"
+            style="@style/bold9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="ПЛОЩАДКА"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/main"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            style="@style/bold9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="МАГАЗИН"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/square"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+    <!--end footer-->
+</androidx.constraintlayout.widget.ConstraintLayout>

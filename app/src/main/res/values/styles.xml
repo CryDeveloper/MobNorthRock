@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="bold9">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">9dp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="twName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_condensed_bold_italic</item>
+        <item name="android:textColor">@color/light_purple</item>
+        <item name="android:textSize">48dp</item>
+        <item name="android:layout_marginTop">100dp</item>
+    </style>
+
+    <style name="place">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_condensed_black</item>
+        <item name="android:textColor">@color/mustard</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginTop">80dp</item>
+    </style>
+
+    <style name="slogan">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_condensed_black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+
+    <style name="timeConcert">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_condensed_black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="nameGroup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/light_purple</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+</resources>
