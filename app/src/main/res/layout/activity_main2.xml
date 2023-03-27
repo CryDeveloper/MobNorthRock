@@ -33,10 +33,10 @@
             android:src="@drawable/circle_group"
             android:layout_below="@+id/slogan"
             android:layout_alignParentRight="true"
-            android:layout_above="@+id/btn_buyTicket"/>
+            android:layout_alignBottom="@+id/btn_buyTicket"/>
         <Button
             android:id="@+id/btn_buyTicket"
-            android:layout_marginBottom="70dp"
+            android:layout_marginBottom="80dp"
             android:text="Купить билеты"
             style="@style/pink_button"
             android:layout_alignParentBottom="true"
