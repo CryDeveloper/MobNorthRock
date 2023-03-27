@@ -6,20 +6,17 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 
-class MainActivity : AppCompatActivity() {
+class OrderTicket : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_order_ticket)
         init()
     }
     fun init()
     {
         var day1 = findViewById<TextView>(R.id.day_one)
         var day2 = findViewById<TextView>(R.id.day_two)
-        var btnBuy = findViewById<Button>(R.id.btn_buyTicket)
-
-        day1.setTextColor(this@MainActivity.getColor(R.color.white))
-        day2.setTextColor(this@MainActivity.getColor(R.color.white))
+        var twMainPage = findViewById<TextView>(R.id.main)
 
         day1.setOnClickListener()
         {
@@ -29,9 +26,10 @@ class MainActivity : AppCompatActivity() {
         {
             startActivity(Intent(this, SecondDay::class.java))
         }
-        btnBuy.setOnClickListener()
+        twMainPage.setOnClickListener()
         {
-            startActivity(Intent(this, OrderTicket::class.java))
+            startActivity(Intent(this,MainActivity::class.java))
+            finish()
         }
 
     }

@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Mobile North Rock</string>
     <string name="place"><font>Санкт–Петербург, Зенит Арена\n\n20 - 21 МАРТА 2022</font></string>
+    <string-array name="list_day">
+        <item><string name="day1">День 1</string></item>
+        <item><string name="day1">День 2</string></item>
+        <item><string name="day1">День 3</string></item>
+    </string-array>
 </resources>

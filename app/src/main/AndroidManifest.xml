@@ -12,9 +12,12 @@
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".OrderTicket"
+            android:exported="false" />
+        <activity
             android:name=".SecondDay"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".FirstDay"
             android:exported="false"
