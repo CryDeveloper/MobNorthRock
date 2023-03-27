@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondDay"
+    tools:context=".FirstDay"
     android:fillViewport="true">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         <RelativeLayout android:id="@+id/first_day_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/day1"
+            android:background="@drawable/day2"
             android:layout_below="@id/head">
             <TextView android:id="@+id/place"
                 android:text="@string/place"
@@ -39,11 +39,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="150dp"
-                android:src="@drawable/line_dayone"
+                android:src="@drawable/line_day_two"
                 android:layout_below="@id/slogan"
                 android:layout_centerHorizontal="true"/>
             <LinearLayout
-                android:id="@+id/ram"
+                android:id="@+id/bi2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="125dp"
@@ -60,26 +60,26 @@
                     android:text="17:00 - 20:00" />
 
                 <TextView
-                    android:id="@+id/group_ram"
+                    android:id="@+id/group_bi2"
                     style="@style/nameGroup"
-                    android:text="RAMMSTEIN"
+                    android:text="БИ-2"
                     tools:ignore="MissingConstraints" />
 
                 <ImageView
-                    android:id="@+id/logo_ram"
+                    android:id="@+id/logo_bi2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/ramm" />
+                    android:src="@drawable/b2" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="330dp"
+                android:layout_marginTop="370dp"
                 android:layout_marginEnd="15dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:layout_below="@+id/ram"
+                android:layout_below="@+id/bi2"
                 android:layout_toLeftOf="@+id/line"
                 tools:ignore="MissingConstraints">
 
@@ -90,24 +90,24 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/group_sab"
+                    android:id="@+id/group_ddt"
                     style="@style/nameGroup"
-                    android:text="SABATON"/>
+                    android:text="ДДТ"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/time2200"
+                    tools:ignore="MissingConstraints" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-20dp"
-                    android:src="@drawable/sabaton"/>
+
             </LinearLayout>
-            <LinearLayout android:id="@+id/met"
+            <LinearLayout android:id="@+id/arai"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="140dp"
                 android:layout_marginStart="15dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:layout_below="@+id/ram"
+                android:layout_below="@+id/bi2"
                 android:layout_toRightOf="@+id/line"
                 tools:ignore="MissingConstraints">
                 <TextView
@@ -115,48 +115,18 @@
                     style="@style/timeConcert"
                     android:text="20:20 - 22:00"
                     tools:ignore="MissingConstraints" />
-
                 <TextView
                     android:id="@+id/group_met"
-                    android:text="METALLICA"
+                    android:text="АРИЯ"
                     tools:ignore="MissingConstraints"
                     style="@style/nameGroup" />
-
-                <ImageView
-                    android:id="@+id/logo_met"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/metallica"
-                    android:layout_marginTop="-35dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="270dp"
-                android:layout_marginStart="15dp"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:layout_below="@+id/met"
-                android:layout_toRightOf="@+id/line"
-                tools:ignore="MissingConstraints">
-                <TextView
-                    android:id="@+id/time0001"
-                    style="@style/timeConcert"
-                    android:text="0:00-1:45"
-                    tools:ignore="MissingConstraints" />
-
-                <TextView
-                    android:id="@+id/group_acdc"
-                    android:text="AC/DC"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    tools:ignore="MissingConstraints"
-                    style="@style/nameGroup" />
-
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/asdc"
-                    android:layout_marginTop="5dp"/>
+                    android:src="@drawable/aria"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/group_sab" />
             </LinearLayout>
         </RelativeLayout>
         <!--end content-->

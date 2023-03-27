@@ -5,30 +5,28 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-class FirstDay : AppCompatActivity() {
+class SecondDay : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_first_day)
+        setContentView(R.layout.activity_second_day)
         Init()
     }
     fun Init()
     {
         var day1 = findViewById<TextView>(R.id.day_one)
-        var twMainPage = findViewById<TextView>(R.id.main)
         var day2 = findViewById<TextView>(R.id.day_two)
+        var twMainPage = findViewById<TextView>(R.id.main)
 
-        day1.setTextColor(this@FirstDay.getColor(R.color.pink))
+        day2.setTextColor(this@SecondDay.getColor(R.color.pink))
 
         twMainPage.setOnClickListener()
         {
             startActivity(Intent(this,MainActivity::class.java))
             finish()
         }
-
-        day2.setOnClickListener()
+        day1.setOnClickListener()
         {
-            startActivity(Intent(this, SecondDay::class.java))
+            startActivity(Intent(this, FirstDay::class.java))
         }
-
     }
 }

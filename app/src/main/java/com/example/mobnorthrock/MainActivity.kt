@@ -23,5 +23,10 @@ class MainActivity : AppCompatActivity() {
         {
             startActivity(Intent(this, FirstDay::class.java))
         }
+        day2.setOnClickListener()
+        {
+            startActivity(Intent(this, SecondDay::class.java))
+        }
+
     }
 }

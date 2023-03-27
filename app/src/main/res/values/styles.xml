@@ -23,7 +23,7 @@
         <item name="android:textColor">@color/mustard</item>
         <item name="android:textSize">16dp</item>
         <item name="android:textAlignment">center</item>
-        <item name="android:layout_marginTop">210dp</item>
+        <item name="android:layout_marginTop">110dp</item>
     </style>
 
     <style name="slogan">
