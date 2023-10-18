@@ -35,4 +35,4 @@ North Rock Mobile - *когда надоело искать информацию
 
 ## Авторы
 
-* **Таран Анжелика** - [CryDeveloper](https://github.com/CryDeveloper)
+* **CryDeveloper** - [CryDeveloper](https://github.com/CryDeveloper)
